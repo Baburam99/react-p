@@ -1,0 +1,52 @@
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(4, 4, 39);
+}
+form{
+   border-left: 2px solid rgb(254, 0, 0);
+    box-shadow: 2px 3px 1px rgb(0, 208, 255);
+    padding: 3em;
+}
+.form-content{
+   display:grid;
+   place-items: center;
+   place-content: center;
+}
+form input{
+    text-align:center;
+    padding: 0.4em 1.5em;
+    margin: 0.6em 0em;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
+form textarea{
+    padding: 0.5em 0em;
+    width: 15em;
+    text-align: center;
+    font-size:  clamp(1rem, 2vw, 1.4rem);
+}
+.title h2{
+    font-family: Merriweather;
+    border-bottom: 3px solid rgb(254, 0, 0);
+    padding: 0.4em;
+    color:white;
+}
+form button{
+    padding: 0.7em 4em;
+    margin-top: 1em;
+    margin-left: 5.5em;
+    border:none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:blue;
+    color:white;
+}
+@media (max-width: 380px) {
+    form{
+        padding: 0.7em;
+    }
+    
+}

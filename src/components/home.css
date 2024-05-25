@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+
+.home{
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+min-height:100vh;
+padding: 2em;
+background-image: url(https://1.bp.blogspot.com/-5ZaOdrnFUVE/WGYVfiBUIFI/AAAAAAAALzY/Lx3VgSSvniwlmgKuRiG85CxbbwfbDUPqwCLcB/s1600/Coding%2BWallpapers%2B4.jpg);
+transition: all 0.4s ease-in-out;
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.home-texts{
+    font-family: Lato;
+    color:rgb(255, 255, 255);
+    font-size: clamp(1em, 2vw, 1.9rem);
+    width: 40ch;
+    background-color: rgba(2, 173, 252, 0.288);
+    padding: 0.7em;
+    border-radius: 0.5em;
+    text-shadow: 1px 1px 2px black;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    opacity: 0;
+    animation: opacity 3s ease 1 forwards;
+}
+@keyframes opacity {
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 100;
+    }
+    
+}
+
+.home-img img{
+   height: clamp(10em, 30vw, 20em)
+}
+.highlight{
+    color:rgb(182, 0, 237);
+    font-size: clamp(1.1em, 2vw, 1.2rem);
+    font-family: merriweather, sans-serif;
+}
+.home-links{
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+}
+.home-links a button{
+    padding: 0.5em 1em;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    border:none;
+    background-color: rgb(86, 9, 110);
+    cursor: pointer;
+    color:white;
+}
+@media (max-width:590px) {
+    
+
+.home{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8em;
+   overflow: hidden;
+}
+.home-texts{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+}
+@media (max-width: 350px) {
+    .home-texts h2{
+        font-size: clamp(1em, 2vw, 1.5em);
+        width: 20ch
+    }
+    .home-links a button{
+        padding: 0.3em 0.5em;
+    }
+}

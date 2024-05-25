@@ -1,0 +1,133 @@
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow:hidden;
+    padding: 3em;
+    background-color: rgb(0, 0, 66);
+     min-height: 100vh;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-title h1{
+    font-size: clamp(1rem, 0.5714rem + 4.5714vw, 3.5rem);
+    color:whitesmoke;
+    border-bottom: 3px solid rgb(41, 66, 191);
+    padding: 0.3em;
+    border-bottom-left-radius:20px;
+}
+.project-title p{
+    font-size: clamp(1rem, 0.5714rem + 2.5714vw, 2rem);
+    color:grey;
+    border-top-right-radius: 20px;
+}
+.project-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.project-cover{
+    display: flex;
+    justify-content: start;
+    padding: 1em;
+    border-bottom: 0.3em solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.project-one{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background-color: rgb(255, 255, 255);
+ align-items: center;
+ border: 2px solid black;
+ border-radius: 10px;
+ padding: 1em;
+}
+.project-one:hover{
+    box-shadow: 1px -1px 20px rgb(0, 255, 251);
+}
+.project-one h2{
+    margin-top: 0.8em;
+    color:rgb(0, 0, 0);
+    font-size: clamp(1rem, 2.4vw, 2rem);
+}
+.project-one p{
+    display:flex;
+    margin-top: 0.8em;
+    color:rgb(0, 0, 0);
+    margin-bottom: 1em;
+}
+.project-one p span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+
+.project-one img{
+    height: 15em;
+    width: 20rem;
+    border-radius: 10px;
+}
+.project-one-buttons{
+    display: flex;
+    margin-top: 1em;
+    gap: 0.5em;
+}
+.project-one-buttons a button{
+    padding: 0.5em 1em;
+    border:none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: darkblue;
+    color:white;
+}
+@media (max-width: 1230px) {
+    .project-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 870px) {
+    .project-box{
+        flex-direction: column;
+        gap: 3em;
+        margin-top: 5em;
+        text-align: center;
+    }
+
+  .project-one img{
+ height: 9em;
+ width: 12em;
+  }
+  .project-one h2{
+    margin-top: 1em;
+  }
+  .project-one p{
+    margin: 0px;
+  }
+  .project-one p span svg{
+   height: 2em;
+ padding: 0.4em;
+}
+}
+@media (max-width: 560px) {
+    .project-one img{
+   height: 7em;
+   width: 10em;
+    }
+    .project-one p span svg{
+     height: 2em;
+   padding: 0.4em;
+  }
+  }
+  @media (max-width: 530px) {
+    .project-box{
+        grid-template-columns: 1fr;
+    }
+    
+  }

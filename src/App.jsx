@@ -7,7 +7,7 @@ import Contact from './components/contact'
 
 function App() {
   return (
-     <>
+     <div>
      <Nav />
 
       <section id='home'>
@@ -22,7 +22,7 @@ function App() {
       <section id='contact'>
         <Contact />
       </section>
-     </>
+     </div>
   )
 }
 
